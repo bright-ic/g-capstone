@@ -1,0 +1,186 @@
+/* Basic Style */
+
+html,
+body.detail {
+  background-color: #ffccdd;
+  margin: 10px;
+}
+.the_header {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  box-shadow: 0px 3px 50px #0000001f;
+  background-color: red;
+  margin-bottom: 1rem;
+  color: #fff;
+  top: 0px;
+}
+.the_header .brand {
+  height: 60px;
+  margin-left: 2rem;
+}
+.the_header .brand h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 60px;
+  font-size: 2rem;
+}
+.the_header .brand span {
+  color: #9ac601;
+  font-family: Montserrat, sans-serif;
+}
+main section .signal .spin {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: rotation 0.7s ease infinite;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+.detail {
+    .wrapper {
+        text-align: center;
+        .spin {
+            width: 2rem;
+            height: 2rem;
+            border: 3px solid rgba(0, 0, 0, 0.25);
+            border-top-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: rotation 0.7s ease infinite;
+            margin-bottom: 1rem;
+            margin: 0 auto;
+        }
+        p.city_detail_holder {
+            text-align: left;
+            line-height: 25px;
+        }
+    }
+}
+
+h1 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 38px;
+  text-align: center;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+/* Grid */
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 125px;
+  grid-auto-flow: dense; /* Fill all spaces with fitted images */
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.city_detail_con {
+  background-color: rgb(162, 43, 185);
+  padding: 5px;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.horizontal p {
+  font-size: 15px;
+}
+.horizontal {
+  background-color: rgb(162, 43, 185);
+  padding: 5px;
+}
+.forecast .p2 {
+  background-color: blue;
+  font-size: 20px;
+}
+
+a.link {
+    height: auto;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  background-color: rgb(19, 18, 18);
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-decoration:none;
+  outline:none;
+}
+input[type='submit'] {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  background-color: rgb(19, 18, 18);
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.plan_list_container {
+    width: 100%;
+    &>div {
+        margin-top:15px;
+        cursor:pointer;
+        display: inline-block;
+        margin-right:20px;
+        font-size: 16px;
+        padding:10px;
+        &:last-child {
+            margin-right:0;
+        }
+        &:hover {
+            background-color: #FF0000;
+            color:#fff;
+        }
+    }
+}
+.active_button {
+    background-color: #FF0000;
+    color:#fff;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
